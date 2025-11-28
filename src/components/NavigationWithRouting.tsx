@@ -133,7 +133,7 @@ function PlatformMegaMenu({ onClose }: { onClose: () => void }) {
     },
     {
       icon: <Cloud className="w-5 h-5" />,
-      title: "Rentall API",
+      title: "RentWorksPlus+ API",
       description: "Build your mobile experience with our developer-friendly API.",
       link: "/platform/api"
     },
@@ -145,7 +145,7 @@ function PlatformMegaMenu({ onClose }: { onClose: () => void }) {
     },
     {
       icon: <CreditCard className="w-5 h-5" />,
-      title: "RENTALL Payments",
+      title: "RentWorksPlus+ Payments",
       description: "Integrated payment processing with 5 methods.",
       link: "/platform/payments"
     },
