@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronDown, Car, Calendar, Cloud, Smartphone, CreditCard, Settings, Building2, Users, Briefcase, Wrench, BookOpen, FileText, Clipboard, Megaphone, Calendar as CalendarIcon, Info, Handshake, UserPlus, Newspaper, HelpCircle, Book, Code, GraduationCap, Phone, Activity } from 'lucide-react';
+import { ChevronDown, Car, Calendar, Cloud, Smartphone, CreditCard, Settings, Building2, Users, Briefcase, Wrench, BookOpen, FileText, Clipboard, Megaphone, Calendar as CalendarIcon, Info, Handshake, UserPlus, Newspaper, HelpCircle, Book, Code, GraduationCap, Phone, Activity, Zap } from 'lucide-react';
 import { Link } from './Router';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import logo from 'figma:asset/82b6f4b94e67a09f71951541678541a2738fc1b4.png';
@@ -199,33 +199,27 @@ function SolutionsMegaMenu({ onClose }: { onClose: () => void }) {
   const businessTypes = [
     {
       icon: <Building2 className="w-5 h-5" />,
-      title: "Car Rental Agencies",
-      description: "Daily rental operations",
-      link: "/solutions/car-rental-agencies"
-    },
-    {
-      icon: <Users className="w-5 h-5" />,
-      title: "Multi-Location & Franchise",
-      description: "Scale across locations",
+      title: "Multi-Location & Franchise Operators",
+      description: "Centralized control with synchronized branch performance.",
       link: "/solutions/multi-location"
     },
     {
       icon: <Briefcase className="w-5 h-5" />,
       title: "Corporate & Long-Term Fleets",
-      description: "Employee vehicle programs",
+      description: "Advanced contract, billing, and vehicle lifecycle intelligence.",
       link: "/solutions/corporate-fleets"
     },
     {
-      icon: <Wrench className="w-5 h-5" />,
-      title: "Equipment & Machinery",
-      description: "Construction & industrial",
-      link: "/solutions/equipment-rental"
+      icon: <Car className="w-5 h-5" />,
+      title: "Truck, Van & Commercial Vehicle Rentals",
+      description: "Purpose-built tools for commercial and utility fleet operators.",
+      link: "/solutions/truck-commercial"
     },
     {
-      icon: <Car className="w-5 h-5" />,
-      title: "Dealership Loaner Fleets",
-      description: "Service center rentals",
-      link: "/solutions/dealership"
+      icon: <Zap className="w-5 h-5" />,
+      title: "EV, Scooter & Micro-Mobility Providers",
+      description: "Charging-aware intelligence for modern urban and electric fleets.",
+      link: "/solutions/ev-micromobility"
     }
   ];
 
@@ -233,32 +227,20 @@ function SolutionsMegaMenu({ onClose }: { onClose: () => void }) {
     {
       icon: <Users className="w-5 h-5" />,
       title: "Owners & General Managers",
-      description: "Strategic insights",
+      description: "Strategic clarity with real-time rental intelligence.",
       link: "/solutions/owners"
     },
     {
       icon: <Wrench className="w-5 h-5" />,
       title: "Operations & Fleet Managers",
-      description: "Day-to-day optimization",
+      description: "Optimized fleet health, utilization, and operational efficiency.",
       link: "/solutions/operations"
     },
     {
       icon: <Users className="w-5 h-5" />,
-      title: "Front Desk & Agents",
-      description: "Fast customer service",
+      title: "Front Desk & Rental Agents",
+      description: "Fast, intuitive workflows for high-volume customer service.",
       link: "/solutions/front-desk"
-    },
-    {
-      icon: <CreditCard className="w-5 h-5" />,
-      title: "Finance & Accounting",
-      description: "Payment & reporting",
-      link: "/solutions/finance"
-    },
-    {
-      icon: <Code className="w-5 h-5" />,
-      title: "IT & Digital Transformation",
-      description: "Integration & APIs",
-      link: "/solutions/it"
     }
   ];
 

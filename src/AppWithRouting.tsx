@@ -46,6 +46,12 @@ export default function AppWithRouting() {
         <Route path="/solutions/corporate-fleets">
           <Other.CorporateFleetsPage />
         </Route>
+        <Route path="/solutions/truck-commercial">
+          <Other.TruckCommercialPage />
+        </Route>
+        <Route path="/solutions/ev-micromobility">
+          <Other.EVMicroMobilityPage />
+        </Route>
         <Route path="/solutions/equipment-rental">
           <Other.EquipmentRentalPage />
         </Route>
