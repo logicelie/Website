@@ -1,3 +1,4 @@
+import React from 'react';
 import { MessageCircle, Phone, Mail, BookOpen, Ticket, Bot } from 'lucide-react';
 
 export function ExpertSupport() {
@@ -61,8 +62,10 @@ export function ExpertSupport() {
                   </div>
 
                   {/* Single Orbital Path - 7 unique experts */}
+                  {/* Dashed border circle */}
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 rounded-full border-2 border-dashed border-[#007A55]/30"></div>
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 animate-orbit-slow">
+                  {/* Animated orbit container */}
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72  animate-orbit-slow">
                     {supportTeam.map((avatar, index) => {
                       // Start from top (270 degrees = -90 degrees) and distribute evenly
                       const angle = -90 + (index * 360) / supportTeam.length;
@@ -74,9 +77,11 @@ export function ExpertSupport() {
                       return (
                         <div
                           key={`expert-${index}`}
-                          className="absolute top-1/2 left-1/2"
+                          className="absolute"
                           style={{
-                            transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) rotate(${-angle}deg)`,
+                            left: `calc(50% + ${x}px)`,
+                            top: `calc(50% + ${y}px)`,
+                            transform: `translate(-50%, -50%) rotate(${-angle}deg)`,
                           }}
                         >
                           {/* Glow background for select avatars */}
@@ -231,10 +236,10 @@ export function ExpertSupport() {
       <style>{`
         @keyframes orbit-slow {
           from {
-            transform: translate(-50%, -50%) rotate(0deg);
+            transform:  rotate(0deg);
           }
           to {
-            transform: translate(-50%, -50%) rotate(360deg);
+            transform:  rotate(360deg);
           }
         }
 
